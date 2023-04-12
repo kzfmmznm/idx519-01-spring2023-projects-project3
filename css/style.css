@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Use Ubuntu and Helvetica */
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu';
+}
+
+h1,h2,h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+nav {
+  background-color: darkslategray;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+nav>ul>li {
+  width: 200px;
+  float: left;
+}
+
+nav>ul>li>a {
+  display: block;
+  background-color: darkslategray;
+  color: white;
+  padding: 20px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav>ul>li>a:hover {
+  background-color: lightseagreen;
+}
+
+section {
+  clear: left;
+  margin: 10px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+#myname_wrapper_label {
+  float: left;
+  width: 20%;
+}
+
+#myphoto_wrapper_label {
+  float: left;
+  width: 20%;
+}
+
+#name_photo_wrapper {
+  clear: left;
+}
+
+#myname_wrapper {
+  float: left;
+  width: 20%;
+}
+
+#myphoto_wrapper {
+  float: left;
+  width: 20%;
+}
+
+#work_experience {
+  clear: left;
+}
+
+#image_travel {
+  float: left;
+}
+
+#video_travel {
+  float: left;
+}
+
+footer {
+  clear: left;
+}
+
+/* Decorate table */
+table {
+  border-collapse: separate;
+}
+
+table th {
+  text-align: center;
+  width: 18%;
+  color: white;
+  background: darkgray;
+  padding: 20px;
+}
+
+table th:first-child {
+  width: 10%;
+}
+
+table td {
+  text-align: center;
+  width: 18%;
+  border: 1px solid darkgray;
+  padding: 20px;
+}
+
+table td:first-child {
+  width: 10%;
+}
+
+table td:not(:first-child):hover {
+  background-color: lightseagreen;
+}
+
+.morning {
+  color: white;
+  background-color: #87ceeb;
+  opacity: 0.9;
+}
+
+.afternoon {
+  color: white;
+  background-color: #ffa500;
+  opacity: 0.8;
+}
+
+.evening {
+  color: white;
+  background-color: #191970;
+  opacity: 0.5;
+}
+
+/* For fixed width layout page */
+#section-travel {
+  width: 1000px;
+}
+image,video {
+  width: 500px;
+}
