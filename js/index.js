@@ -9,7 +9,7 @@ function initMap() {
   let map = new google.maps.Map(document.getElementById('map'), opts)
 
   // Add marker with icon
-  const imagePath = '../media/designer_illustya.png'
+  const imagePath = 'media/designer_illustya.png'
   let marker = new google.maps.Marker({
     position: kaplanLatLng,
     map: map,
