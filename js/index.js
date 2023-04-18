@@ -20,6 +20,14 @@ function initMap() {
   // Add transit layer on the map
   const transitLayer = new google.maps.TransitLayer()
   transitLayer.setMap(map)
+
+  // Show Lat/Lng from a Click Event and show them in page, inspired by sample API
+  map.addListener('click', (mapsMouseEvent) => {
+    const location_pointed = document.getElementById('location-pointed')
+    location_pointed.innerText = `You pointed: (Latitude: ${
+      mapsMouseEvent.latLng.toJSON().lat
+    }, Longitude: ${mapsMouseEvent.latLng.toJSON().lng}) !`
+  })
 }
 
 window.initMap = initMap

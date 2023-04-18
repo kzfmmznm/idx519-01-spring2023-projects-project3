@@ -184,3 +184,9 @@ video {
 #map-heading {
   text-align: center;
 }
+
+#location-pointed {
+  text-align: center;
+  color: white;
+  background-color: lightseagreen;
+}
