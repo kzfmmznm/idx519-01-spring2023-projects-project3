@@ -14,6 +14,7 @@ function initMap() {
     position: kaplanLatLng,
     map: map,
     icon: imagePath,
+    animation: google.maps.Animation.DROP,
   })
 }
 
