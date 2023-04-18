@@ -6,7 +6,8 @@
   <title>Kazufumi Mizunuma: Project 1</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!-- <script type="text/javascript" src="js/index.js"></script> -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV7chrsajMdQMDSkR7zdRtbw4sG7GAFA4&callback=initMap"></script>
 </head>
 <body>
   <nav>
@@ -19,6 +20,7 @@
   </nav>
 
   <section>
+    <h1 id="map-heading">Map for IIT Institute of Design</h1>
     <div id="map"></div>
   </section>
 
@@ -29,14 +31,8 @@
   </footer>
 
   <script type="text/javascript">
-    function initMap() {
-      var opts = {
-        zoom: 15,
-        center: new google.maps.LatLng(35.1239654, 136.9417741),
-      }
-      var map = new google.maps.Map(document.getElementById('map'), opts)
-    }
+
   </script>
-  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV7chrsajMdQMDSkR7zdRtbw4sG7GAFA4&callback=initMap"></script>
+
 </body>
 </html>

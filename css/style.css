@@ -175,6 +175,12 @@ video {
 
 /* Show map */
 #map {
-  height: 500px;
-  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 640px;
+  width: 960px;
+}
+
+#map-heading {
+  text-align: center;
 }
