@@ -5,11 +5,18 @@
   font-family: Helvetica, sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Ubuntu';
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 
@@ -29,7 +36,7 @@ nav {
   background-color: darkslategray;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -38,12 +45,12 @@ nav>ul {
   display: flex;
 }
 
-nav>ul>li {
+nav > ul > li {
   width: 200px;
   float: left;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   display: block;
   background-color: darkslategray;
   color: white;
@@ -53,7 +60,7 @@ nav>ul>li>a {
   font-weight: bold;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   background-color: lightseagreen;
 }
 
@@ -161,6 +168,13 @@ table td:not(:first-child):hover {
 #section-travel {
   width: 1000px;
 }
-image,video {
+image,
+video {
+  width: 500px;
+}
+
+/* Show map */
+#map {
+  height: 500px;
   width: 500px;
 }
