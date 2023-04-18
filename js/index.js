@@ -1,11 +1,20 @@
-let map
-
 function initMap() {
-  var opts = {
+  const kaplanLatLng = { lat: 41.8369733, lng: -87.6282752 }
+
+  const opts = {
     zoom: 15,
-    center: new google.maps.LatLng(35.1239654, 136.9417741),
+    center: kaplanLatLng,
   }
-  map = new google.maps.Map(document.getElementById('map'), opts)
+
+  let map = new google.maps.Map(document.getElementById('map'), opts)
+
+  // Add marker with ID logo
+  const imagePath = '../media/designer_illustya.png'
+  let marker = new google.maps.Marker({
+    position: kaplanLatLng,
+    map: map,
+    icon: imagePath,
+  })
 }
 
 window.initMap = initMap
