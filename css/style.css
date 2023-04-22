@@ -21,11 +21,11 @@ h3 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 18px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 h4 {
@@ -74,7 +74,11 @@ figure {
   padding: 0;
 }
 
-#myname_wrapper_label {
+#myname_wrapper {
+  display: none;
+}
+
+/* #myname_wrapper_label {
   float: left;
   width: 20%;
 }
@@ -96,7 +100,7 @@ figure {
 #myphoto_wrapper {
   float: left;
   width: 20%;
-}
+} */
 
 #work_experience {
   clear: left;
@@ -189,4 +193,66 @@ video {
   text-align: center;
   color: white;
   background-color: lightseagreen;
+}
+
+/* Media query for iPad */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  #myname {
+    display: none;
+  }
+  #myname_wrapper_label {
+    float: left;
+    width: 20%;
+  }
+  #myphoto_wrapper_label {
+    float: left;
+    width: 20%;
+  }
+  #name_photo_wrapper {
+    clear: left;
+  }
+  #myname_wrapper {
+    display: block;
+    float: left;
+    width: 20%;
+  }
+  #myphoto_wrapper {
+    float: left;
+    width: 20%;
+  }
+}
+
+/* Media query for PC */
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    color: gray;
+  }
+  h2 {
+    color: gray;
+  }
+  h3 {
+    color: gray;
+  }
+  h4 {
+    color: gray;
+  }
+  p {
+    color: gray;
+  }
+  section > ul > li {
+    color: gray;
+  }
+  td {
+    color: gray;
+  }
+  figcaption {
+    color: gray;
+  }
 }
