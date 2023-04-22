@@ -6,6 +6,9 @@
   <title>Kazufumi Mizunuma: Project 1</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/index.js"></script>
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV7chrsajMdQMDSkR7zdRtbw4sG7GAFA4&callback=initMap"></script>
 </head>
@@ -34,10 +37,18 @@
     </ul>
     <h3>Travel with Amtrak California Zephyr</h3>
     <p>After some sightseeings in San Francisco, I took the California Zephyr to come to Chicago. It was a two-night, three-day sleeper train trip. It was great experience and I would like to share a photo and a movie below.</p>
-    <figure id="image_travel">
+    <!-- <figure id="image_travel">
       <img src="media/amtrak.jpg" alt="photo at Amtrak station">
       <figcaption>A photo at Amtrak station, taken by a kind gentleman </figcaption>
-    </figure>
+    </figure> -->
+    <div class="bxslider">
+      <div><img src="/media/departure.jpg" title="Departure" alt="departure" /></div>
+      <div><img src="/media/forest.jpg" title="Forest" alt="forest" /></div>
+      <div><img src="/media/station.jpg" title="Station" alt="station" /></div>
+      <div><img src="/media/kitchencar.jpg" title="Kitchen Car" alt="kitchen car" /></div>
+      <div><img src="/media/plain.jpg" title="Plain" alt="plain" /></div>
+      <div><img src="/media/chicago.jpg" title="Chicago downtown" alt="chicago downtown" /></div>
+    </div>
     <video id="video_travel" controls>
       <source src="media/amtrak.mp4" type="video/mp4">
     </video>
