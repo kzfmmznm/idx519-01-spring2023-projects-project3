@@ -30,7 +30,9 @@ function initMap() {
   })
 }
 
-window.initMap = initMap
+window.onload = function () {
+  window.initMap = initMap
+}
 
 $(function () {
   $('.bxslider').bxSlider({
