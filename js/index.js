@@ -1,3 +1,11 @@
+$(function () {
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600,
+  })
+})
+
 function initMap() {
   const kaplanLatLng = { lat: 41.8369733, lng: -87.6282752 }
 
@@ -30,14 +38,6 @@ function initMap() {
   })
 }
 
-window.onload = function () {
-  window.initMap = initMap
-}
+window.initMap = initMap
 
-$(function () {
-  $('.bxslider').bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 600,
-  })
-})
+// window.onload = function () {}
